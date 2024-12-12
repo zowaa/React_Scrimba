@@ -4,13 +4,14 @@
 
 body {
   margin: 0;
+  background: #282d35;
   font-family: "Inter";
 }
 
 .header {
   background: #21222a;
-  height: 90px;
-  padding-left: 20px;
+  height: 91px;
+  padding-left: 26px;
 }
 
 .flex-container {
@@ -20,12 +21,32 @@ body {
 }
 
 .logo {
-  width: 40px;
-  margin-right: 5px;
+  width: 30px;
+  margin-right: 7px;
 }
 
 .title {
   font-weight: 700;
-  font-size: 27px;
+  font-size: 23px;
   color: #94b5eb;
+}
+
+.main {
+  padding-top: 57px;
+  padding-left: 27px;
+  color: white;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.list {
+  margin-top: 46px;
+}
+
+.list > li {
+  margin-bottom: 20px;
+  line-height: 19px;
 }
