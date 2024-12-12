@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+
+.header {
+  background: #21222a;
+  height: 90px;
+  padding-left: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 27px;
+  color: #94b5eb;
+}
