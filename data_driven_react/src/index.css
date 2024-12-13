@@ -7,6 +7,13 @@ body {
   font-family: "Inter";
 }
 
+#xx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -25,4 +32,55 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: white;
+}
+
+article {
+  width: 470px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 125px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.infos {
+  width: 326px;
+  height: 144px;
+}
+
+.infos > img {
+  height: 12px;
+  margin-right: 4px;
+}
+
+.infos > span {
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.infos > a {
+  color: #918e9b;
+  font-size: 12px;
+}
+
+.place {
+  margin-top: 4px;
+  margin-bottom: 14px;
+  font-size: 25px;
+}
+
+.dates {
+  margin: 0;
+  font-size: 11px;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 11px;
 }
