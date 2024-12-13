@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f55a5a;
+  height: 55px;
+}
+
+.logo {
+  width: 25px;
+  margin-right: 7px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
