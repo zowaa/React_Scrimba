@@ -26,15 +26,17 @@ export default function Form() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <div className="get_recipe">
-            <div className="container">
-              <span className="p1">Ready for a recipe</span>
-              <span className="p2">
-                Generate a recipe from your list of ingredients.
-              </span>
+          {ingredients.length > 3 && (
+            <div className="get_recipe">
+              <div className="container">
+                <span className="p1">Ready for a recipe</span>
+                <span className="p2">
+                  Generate a recipe from your list of ingredients.
+                </span>
+              </div>
+              <button>Get a recipe</button>
             </div>
-            <button>Get a recipe</button>
-          </div>
+          )}
         </section>
       )}
     </main>
