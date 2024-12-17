@@ -1,18 +1,20 @@
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 
 export default function Form() {
   const [ingredients, setIngredients] = useState<(string | null)[]>([]);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+  function addIng(formData: FormData) {
     const newIngredient = formData.get("ingredient") as string | null;
     setIngredients((prev) => [...prev, newIngredient]);
   }
 
   return (
     <main>
-      <form onSubmit={handleSubmit} id="form">
+      <form
+        //@ts-expect-error disable action err
+        action={addIng}
+        id="form"
+      >
         <input type="text" name="ingredient" placeholder="e.g. oregano" />
         <button>+ Add ingredient</button>
       </form>
