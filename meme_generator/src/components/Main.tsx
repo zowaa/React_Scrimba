@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 
 export default function Main() {
   const [memeInfo, setMemeInfo] = useState({
@@ -7,17 +7,37 @@ export default function Main() {
     imageUrl: "/img.png",
   });
 
+  function changeVal(e: ChangeEvent<HTMLInputElement>) {
+    const { value, name } = e.currentTarget;
+    setMemeInfo((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  }
+
   return (
     <main>
       <div id="text">
         <label>
           Top text <br />
-          <input name="top" type="text" placeholder="Top text" />
+          <input
+            name="topText"
+            type="text"
+            placeholder="Top text"
+            onChange={changeVal}
+            value={memeInfo.topText}
+          />
         </label>
         <br />
         <label>
           Bottom text <br />
-          <input name="bottom" type="text" placeholder="Bottom text" />
+          <input
+            name="bottomText"
+            type="text"
+            placeholder="Bottom text"
+            onChange={changeVal}
+            value={memeInfo.bottomText}
+          />
         </label>
       </div>
       <button>Get a new meme image 🖼</button>
